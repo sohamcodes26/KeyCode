@@ -63,6 +63,7 @@ h1 {
     font-size: 1.1rem;
     width: 100%;
     max-width: 300px;
+    min-height: 40px;
 }
 
 .parent:hover {
