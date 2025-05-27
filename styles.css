@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body {
+    background: linear-gradient(to right, violet, blueviolet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+.parent {
+    display: flex;
+    justify-content: center; 
+    padding: 2rem;
+    background-color: #ebeb86;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid rgb(192, 192, 110);
+    border-radius: 10px;
+    box-shadow: 0px 8px 32px 0px yellow;
+    transition: background 0.3s ease-in-out;
+}
+
+.child {
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: aqua;
+    border: 2px solid rgb(84, 156, 156);
+    border-radius: 10px;
+    box-shadow: 0px 8px 32px 0px aqua;
+    transition: background 0.3s ease-in-out;
+    width: 100%; 
+    align-items: center; 
+}
+
+.animation {
+    font-weight: bold;
+    text-align: center;
+}
+
+.key-content {
+    background-color: rgba(142, 108, 108, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.parent:hover {
+    background-color: rgb(243, 243, 90);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .parent {
+        padding: 1.5rem;
+    }
+
+    .key-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .parent {
+        padding: 1rem;
+    }
+
+    .child {
+        padding: 15px;
+    }
+
+    .key-content {
+        font-size: 0.95rem;
+    }
+}
